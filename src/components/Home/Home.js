@@ -4,7 +4,7 @@ import logo from "../../Skrate-logo.png";
 import vector from "../../Vector.png";
 import login from "../../Login.png";
 
-function Home({ loggedIn }) {
+function Home() {
   return (
     <div>
       <div>
