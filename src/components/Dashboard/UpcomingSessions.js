@@ -7,27 +7,27 @@ function UpcomingSessions({ upcoming_sessions }) {
       {upcoming_sessions.map((session) => (
         <>
           <div className="grid items-center justify-evenly grid-cols-12 mt-2 mb-4 ml-4 gap-2 font-semibold">
-            <div className="col-span-1">
+            <div className="col-span-1 sm:block hidden">
               <img
                 src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80"
                 alt="profile"
                 className="h-7 w-7 rounded-full"
               />
             </div>
-            <div className="col-span-2">
+            <div className="sm:col-span-2 col-span-4">
               <div>{session.mentor_name}</div>
               <div className="text-xs text-slate-400"> Flutter</div>
             </div>
-            <div className="col-span-4 text-center">
+            <div className="sm:col-span-4 col-span-8 text-center">
               <div>{session.timings}</div>
               <div className="text-xs text-slate-400">{session.date}</div>
             </div>
-            <div className="col-span-4">
+            <div className="sm:col-span-4 col-span-4">
               <button className="bg-green-200 px-1 py-2 w-full rounded">
                 {session.session_type}
               </button>
             </div>
-            <div className="col-span-1">
+            <div className="sm:col-span-1 col-span-8 flex justify-center">
               <svg
                 width="31"
                 height="13"

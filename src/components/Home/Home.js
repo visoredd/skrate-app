@@ -6,11 +6,12 @@ import login from "../../Login.png";
 
 function Home() {
   return (
-    <div>
+    <div className="h-screen">
       <div>
         <img src={logo} alt="logo" className="w-32 h-24" />
       </div>
-      <div className="mt-48 flex ml-20 flex-col w-72">
+
+      <div className="flex lg:ml-20 lg:mx-0 flex-col w-72 h-96 justify-center mx-auto">
         <p className="w-32 font-medium text-base">Welcome back to skrate!!</p>
         <button
           className="px-2 py-1 mt-4 bg-blue-700 rounded text-white"
@@ -28,7 +29,7 @@ function Home() {
         <img
           src={login}
           alt="bottom"
-          className="absolute w-2/5 bottom-0 right-2"
+          className="hidden lg:block absolute w-2/5 bottom-0 right-2"
         />
       </div>
     </div>

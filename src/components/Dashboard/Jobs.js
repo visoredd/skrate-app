@@ -6,25 +6,25 @@ function Jobs({ job_postings }) {
       <div className="text-lg mb-2 font-semibold"> New Jobs</div>
       {job_postings.map((job) => (
         <>
-          <div className="grid items-center justify-evenly grid-cols-8 gap-2 mt-4 mb-5 ml-4 font-semibold">
-            <div className="col-span-1">
+          <div className="flex justify-around sm:grid items-center sm:justify-evenly sm:grid-cols-8 gap-2 mt-4 mb-5 ml-4 font-semibold">
+            <div className="sm:col-span-1 sm:block hidden">
               <img
                 src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80"
                 alt="profile"
                 className="h-7 w-7 rounded-full"
               />
             </div>
-            <div className="col-span-3">
+            <div className="sm:col-span-3">
               <div>{job.role}</div>
               <div className="text-xs text-slate-400">
                 {job.organization_name}
               </div>
               <div className="text-xs text-slate-400">{job.location}</div>
             </div>
-            <div className="col-span-3">
+            <div className="sm:col-span-3">
               <div>{job.date_posted}</div>
             </div>
-            <div className="col-span-1">
+            <div className="sm:col-span-1">
               <svg
                 width="31"
                 height="13"
